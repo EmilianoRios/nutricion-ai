@@ -35,7 +35,7 @@ const PhysicalActivityPlan : React.FC<PhysicalActivityPlanInterface> = () => {
 		</Text>
 	</Box>
 	<Flex
-			w={['90%', '90%', '90%', '1150px']}
+			w={['90%', '90%', '90%', '95%']}
 			alignContent='center'
 			justifyContent='center'
 			alignItems='center'
@@ -43,60 +43,60 @@ const PhysicalActivityPlan : React.FC<PhysicalActivityPlanInterface> = () => {
 			pb={8}
 			flexDirection='column'
 			bg='blue'>
-		<Heading>Cursos de calidad de vida</Heading>
+		<Heading>Cursos de actividad física</Heading>
 		<Carousel>
 		<SwiperSlide>
 			<Flex justifyContent='center' flexDirection='column'>
 			<Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' pt='5'/>
-			<Box bg='green' w='70' h='100'>
+			<Box bg='green' minHeight='270px'>
 				<Heading textAlign='center' fontSize={32} pt='3'>A bailar</Heading>
 			</Box>
-			<Button fontSize={24} mx="75px">$230</Button>
+			<Button fontSize={24} mx="auto">$230</Button>
 			</Flex>
 		</SwiperSlide>
 		<SwiperSlide>
 			<Flex justifyContent='center' flexDirection='column'>
 			<Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' pt='5'/>
-			<Box bg='green' w='70' h='100'>
+			<Box bg='green' minHeight='270px'>
 				<Heading textAlign='center' fontSize={32} pt='3'>La fuerza también ayuda</Heading>
 			</Box>
-			<Button fontSize={24} mx="75px">$300</Button>
+			<Button fontSize={24} mx="auto">$300</Button>
 			</Flex>
 		</SwiperSlide>
 		<SwiperSlide>
 			<Flex justifyContent='center' flexDirection='column'>
 			<Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' pt='5'/>
-			<Box bg='green' w='70' h='100'>
+			<Box bg='green' minHeight='270px'>
 				<Heading textAlign='center' fontSize={32} pt='3'>Organizando mis actividades</Heading>
 			</Box>
-			<Button fontSize={24} mx="75px">$280</Button>
+			<Button fontSize={24} mx="auto">$280</Button>
 			</Flex>
 		</SwiperSlide>
 		<SwiperSlide>
 			<Flex justifyContent='center' flexDirection='column'>
 			<Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' pt='5'/>
-			<Box bg='green' w='70' h='100'>
+			<Box bg='green' minHeight='270px'>
 				<Heading textAlign='center' fontSize={32} pt='3'>A bailar</Heading>
 			</Box>
-			<Button fontSize={24} mx="75px">$230</Button>
+			<Button fontSize={24} mx="auto">$230</Button>
 			</Flex>
 		</SwiperSlide>
 		<SwiperSlide>
 			<Flex justifyContent='center' flexDirection='column'>
 			<Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' pt='5'/>
-			<Box bg='green' w='70' h='100'>
+			<Box bg='green' minHeight='270px'>
 				<Heading textAlign='center' fontSize={32} pt='3'>La fuerza también ayuda</Heading>
 			</Box>
-			<Button fontSize={24} mx="75px" position="relative">$300</Button>
+			<Button fontSize={24} mx="auto" position="relative">$300</Button>
 			</Flex>
 		</SwiperSlide>
 		<SwiperSlide>
 			<Flex justifyContent='center' flexDirection='column'>
 			<Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' pt='5'/>
-			<Box bg='green' w='70' h='100'>
+			<Box bg='green' minHeight='270px'>
 				<Heading textAlign='center' fontSize={32} pt='3'>Organizando mis actividades</Heading>
 			</Box>
-			<Button fontSize={24} mx="75px" position="relative">$280</Button>
+			<Button fontSize={24} mx="auto" position="relative">$280</Button>
 			</Flex>
 		</SwiperSlide>
 		</Carousel>

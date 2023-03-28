@@ -16,7 +16,7 @@ const SustainableDevelopment : React.FC<SustainableDevelopmentInterface> = () =>
 	bg='blue'
 	  >
 	<Heading fontSize={40}>Nuestro Curso:</Heading>
-	<Heading fontSize={40}>Programa de Responsabilidad Social y Ambiental</Heading>
+	<Heading fontSize={40} textAlign='center'>Programa de Responsabilidad Social y Ambiental</Heading>
 	<Box bg='orange' pl='8' pr='8' pb='5'>
 		<Text pt='5' fontSize={23} textAlign='justify'>
 			Los cursos de Programa de Responsabilidad Social y Ambiental son una excelente opción para aquellos interesados en aprender cómo pueden contribuir a un futuro más sostenible y responsable en términos sociales y ambientales. Algunos cursos específicos, como "Pequeñas acciones", "Divulgando el cuidado de la naturaleza" y "Que les dejamos a nuestros hijos", ofrecen diferentes enfoques para abordar estos temas.
@@ -35,7 +35,7 @@ const SustainableDevelopment : React.FC<SustainableDevelopmentInterface> = () =>
 		</Text>
 	</Box>
 	<Flex
-			w={['90%', '90%', '90%', '1150px']}
+			w={['90%', '90%', '90%', '95%']}
 			alignContent='center'
 			justifyContent='center'
 			alignItems='center'
@@ -43,60 +43,60 @@ const SustainableDevelopment : React.FC<SustainableDevelopmentInterface> = () =>
 			pb={8}
 			flexDirection='column'
 			bg='blue'>
-		<Heading>Cursos de calidad de vida</Heading>
+		<Heading textAlign='center'>Cursos de programa de responsabilidad social y ambiental</Heading>
 		<Carousel>
 		<SwiperSlide>
 			<Flex justifyContent='center' flexDirection='column'>
 			<Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' pt='5'/>
-			<Box bg='green' w='70' h='130'>
+			<Box bg='green' minHeight='270px'>
 				<Heading textAlign='center' fontSize={32} pt='3'>Pequeñas acciones</Heading>
 			</Box>
-			<Button fontSize={24} mx="75px">$0</Button>
+			<Button fontSize={24} mx="auto">$0</Button>
 			</Flex>
 		</SwiperSlide>
 		<SwiperSlide>
 			<Flex justifyContent='center' flexDirection='column'>
 			<Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' pt='5'/>
-			<Box bg='green' w='70' h='130'>
+			<Box bg='green' minHeight='270px'>
 				<Heading textAlign='center' fontSize={32} pt='3'>Divulgando el cuidado de la naturaleza</Heading>
 			</Box>
-			<Button fontSize={24} mx="75px">$310</Button>
+			<Button fontSize={24} mx="auto">$310</Button>
 			</Flex>
 		</SwiperSlide>
 		<SwiperSlide>
 			<Flex justifyContent='center' flexDirection='column'>
 			<Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' pt='5'/>
-			<Box bg='green' w='70' h='130'>
+			<Box bg='green' minHeight='270px'>
 				<Heading textAlign='center' fontSize={32} pt='3'>Que les dejamos a nuestros hijos</Heading>
 			</Box>
-			<Button fontSize={24} mx="75px">$500</Button>
+			<Button fontSize={24} mx="auto">$500</Button>
 			</Flex>
 		</SwiperSlide>
 		<SwiperSlide>
 			<Flex justifyContent='center' flexDirection='column'>
 			<Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' pt='5'/>
-			<Box bg='green' w='70' h='130'>
+			<Box bg='green' minHeight='270px'>
 				<Heading textAlign='center' fontSize={32} pt='3'>Pequeñas acciones</Heading>
 			</Box>
-			<Button fontSize={24} mx="75px">$0</Button>
+			<Button fontSize={24} mx="auto">$0</Button>
 			</Flex>
 		</SwiperSlide>
 		<SwiperSlide>
 			<Flex justifyContent='center' flexDirection='column'>
 			<Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' pt='5'/>
-			<Box bg='green' w='70' h='130'>
+			<Box bg='green' minHeight='270px'>
 				<Heading textAlign='center' fontSize={32} pt='3'>Divulgando el cuidado de la naturaleza</Heading>
 			</Box>
-			<Button fontSize={24} mx="75px" position="relative">$310</Button>
+			<Button fontSize={24} mx="auto" position="relative">$310</Button>
 			</Flex>
 		</SwiperSlide>
 		<SwiperSlide>
 			<Flex justifyContent='center' flexDirection='column'>
 			<Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' pt='5'/>
-			<Box bg='green' w='70' h='130'>
+			<Box bg='green' minHeight='270px'>
 				<Heading textAlign='center' fontSize={32} pt='3'>Que les dejamos a nuestros hijos</Heading>
 			</Box>
-			<Button fontSize={24} mx="75px" position="relative">$500</Button>
+			<Button fontSize={24} mx="auto" position="relative">$500</Button>
 			</Flex>
 		</SwiperSlide>
 		</Carousel>

@@ -35,7 +35,7 @@ const QualityOfLife : React.FC<QualityOfLifeInterface> = () => {
 			</Text>
 		</Box>
 		<Flex
-		        w={['90%', '90%', '90%', '1150px']}
+		        w={['90%', '90%', '90%', '95%']}
 				alignContent='center'
 				justifyContent='center'
 				alignItems='center'
@@ -44,59 +44,60 @@ const QualityOfLife : React.FC<QualityOfLifeInterface> = () => {
 				flexDirection='column'
 				bg='blue'>
 			<Heading>Cursos de calidad de vida</Heading>
+			
 			<Carousel>
 			<SwiperSlide>
 				<Flex justifyContent='center' flexDirection='column'>
 				<Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' pt='5'/>
-				<Box bg='green' w='70' h='135'>
-					<Heading textAlign='center' fontSize={32} pt='3'>Aprende a elegir los alimentos</Heading>
+				<Box bg='green' minHeight='270px'>
+					<Heading textAlign='center' fontSize={32} pt='3' alignContent='center'>Aprende a elegir los alimentos</Heading>
 				</Box>
-				<Button fontSize={24} mx="75px">$430</Button>
+				<Button fontSize={24} mx="auto">$430</Button>
 				</Flex>
 			</SwiperSlide>
 			<SwiperSlide>
 				<Flex justifyContent='center' flexDirection='column'>
 				<Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' pt='5'/>
-				<Box bg='green' w='70' h='135'>
+				<Box bg='green' minHeight='270px'>
 					<Heading textAlign='center' fontSize={32} pt='3'>Conociendo mis límites mentales</Heading>
 				</Box>
-				<Button fontSize={24} mx="75px">$300</Button>
+				<Button fontSize={24} mx="auto">$300</Button>
 				</Flex>
 			</SwiperSlide>
 			<SwiperSlide>
 				<Flex justifyContent='center' flexDirection='column'>
 				<Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' pt='5'/>
-				<Box bg='green' w='70' h='135'>
+				<Box bg='green' minHeight='270px'>
 					<Heading textAlign='center' fontSize={32} pt='3'>El esfuerzo en dirección al objetivo</Heading>
 				</Box>
-				<Button fontSize={24} mx="75px">$240</Button>
+				<Button fontSize={24} mx="auto">$240</Button>
 				</Flex>
 			</SwiperSlide>
 			<SwiperSlide>
 				<Flex justifyContent='center' flexDirection='column'>
 				<Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' pt='5'/>
-				<Box bg='green' w='70' h='135'>
+				<Box bg='green' minHeight='270px'>
 					<Heading textAlign='center' fontSize={32} pt='3'>Aprende a elegir los alimentos</Heading>
 				</Box>
-				<Button fontSize={24} mx="75px">$430</Button>
+				<Button fontSize={24} mx="auto">$430</Button>
 				</Flex>
 			</SwiperSlide>
 			<SwiperSlide>
 				<Flex justifyContent='center' flexDirection='column'>
 				<Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' pt='5'/>
-				<Box bg='green' w='70' h='135'>
+				<Box bg='green' minHeight='270px'>
 					<Heading textAlign='center' fontSize={32} pt='3'>Conociendo mis límites mentales</Heading>
 				</Box>
-				<Button fontSize={24} mx="75px" position="relative">$300</Button>
+				<Button fontSize={24} mx="auto" position="relative">$300</Button>
 				</Flex>
 			</SwiperSlide>
 			<SwiperSlide>
 				<Flex justifyContent='center' flexDirection='column'>
 				<Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' pt='5'/>
-				<Box bg='green' w='70' h='135'>
+				<Box bg='green' minHeight='270px'>
 					<Heading textAlign='center' fontSize={32} pt='3'>El esfuerzo en dirección al objetivo</Heading>
 				</Box>
-				<Button fontSize={24} mx="75px" position="relative">$240</Button>
+				<Button fontSize={24} mx="auto" position="relative">$240</Button>
 				</Flex>
 			</SwiperSlide>
 			</Carousel>
