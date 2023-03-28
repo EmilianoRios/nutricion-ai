@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Image, Link } from '@chakra-ui/react'
+import { Box, Divider, Flex, Heading, Image, Link } from '@chakra-ui/react'
 import React from 'react'
 import { Link as ReactLink } from 'react-router-dom'
 import { Banner } from '../../../components'
@@ -20,9 +20,9 @@ const Home: React.FC<HomeInterface> = () => {
         justifyContent='center'
         alignItems='center'
         m='auto'
-        bg='blue'
       >
         <Heading pb={4}>Nuestros Cursos</Heading>
+        <Divider bg='orange' h={2} />
         <Flex gap={8} wrap='wrap' justifyContent='center' alignContent='center'>
           <Link
             as={ReactLink}

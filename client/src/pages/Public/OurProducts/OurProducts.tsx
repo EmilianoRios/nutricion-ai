@@ -1,5 +1,6 @@
-import { Flex, Heading, Image } from '@chakra-ui/react'
+import { Box, Flex, Heading, Image } from '@chakra-ui/react'
 import React from 'react'
+import 'swiper/css/navigation'
 import { SwiperSlide } from 'swiper/react'
 import { Banner } from '../../../components'
 import { Carousel } from '../../../components/Carousel'
@@ -61,6 +62,10 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
               <Heading>Hola</Heading>
             </Flex>
           </SwiperSlide>
+          <Box w='100%' m='auto'>
+            <div className='swiper-button-prev' id='ts-prev'></div>
+            <div className='swiper-button-next' id='ts-next'></div>
+          </Box>
         </Carousel>
       </Flex>
     </>
