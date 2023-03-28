@@ -36,7 +36,7 @@ const Home: React.FC<HomeInterface> = () => {
               borderRadius={20}
               overflow='hidden'
             >
-              <Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' />
+              <Image h='300' src='/src/assets/static/img/home/calidad_de_vida.jpg'/>
 
               <Flex
                 p={4}
@@ -62,7 +62,7 @@ const Home: React.FC<HomeInterface> = () => {
               borderRadius={20}
               overflow='hidden'
             >
-              <Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' />
+              <Image h='300' src='/src/assets/static/img/home/actividad_fisica.jpg'/>
               <Flex
                 p={4}
                 height={200}
@@ -87,7 +87,7 @@ const Home: React.FC<HomeInterface> = () => {
               borderRadius={20}
               overflow='hidden'
             >
-              <Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' />
+              <Image h='300' src='/src/assets/static/img/home/responsabilidad_social_y_ambiental.jpg' />
               <Flex
                 p={4}
                 height={200}

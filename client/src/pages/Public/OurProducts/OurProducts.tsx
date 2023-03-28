@@ -27,38 +27,32 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
         <Carousel>
           <SwiperSlide>
             <Flex justifyContent='center' flexDirection='column'>
-              <Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' />
-              <Heading>Hola</Heading>
+              <Image h='255' src='/src/assets/static/img/ourProducts/foods/alimentos_secos.jpg' />
+              <Heading textAlign='center'>Alimentos secos</Heading>
             </Flex>
           </SwiperSlide>
           <SwiperSlide>
             <Flex justifyContent='center' flexDirection='column'>
-              <Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' />
-              <Heading>Hola</Heading>
+              <Image h='255' src='/src/assets/static/img/ourProducts/foods/alimentos_microondas.jpeg' />
+              <Heading textAlign='center'>Alimentos microondas</Heading>
             </Flex>
           </SwiperSlide>
           <SwiperSlide>
             <Flex justifyContent='center' flexDirection='column'>
-              <Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' />
-              <Heading>Hola</Heading>
+              <Image h='255' src='/src/assets/static/img/ourProducts/foods/alimentos_frescos.jpg' />
+              <Heading textAlign='center'>Alimentos frescos</Heading>
             </Flex>
           </SwiperSlide>
           <SwiperSlide>
             <Flex justifyContent='center' flexDirection='column'>
-              <Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' />
-              <Heading>Hola</Heading>
+              <Image h='255' src='/src/assets/static/img/ourProducts/foods/alimentos_bajo_en_sodio.jpg' />
+              <Heading textAlign='center'>Alimentos bajos en sodio</Heading>
             </Flex>
           </SwiperSlide>
           <SwiperSlide>
             <Flex justifyContent='center' flexDirection='column'>
-              <Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' />
-              <Heading>Hola</Heading>
-            </Flex>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Flex justifyContent='center' flexDirection='column'>
-              <Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' />
-              <Heading>Hola</Heading>
+              <Image h='255' src='/src/assets/static/img/ourProducts/foods/alimentos_sin_gluten.jpg' />
+              <Heading textAlign='center'>Alimentos sin gluten</Heading>
             </Flex>
           </SwiperSlide>
         </Carousel>
