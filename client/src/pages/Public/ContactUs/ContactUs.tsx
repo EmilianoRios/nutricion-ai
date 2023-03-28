@@ -1,4 +1,4 @@
-import { Flex, Heading } from '@chakra-ui/react'
+import { Flex, Heading, Text } from '@chakra-ui/react'
 import React from 'react'
 export interface ContactUsInterface {}
 
@@ -11,8 +11,13 @@ const ContactUs: React.FC<ContactUsInterface> = () => {
         justifyContent='center'
         m='auto'
         pt={8}
+        flexDirection='column'
+        alignItems='center'
       >
         <Heading>Contactanos</Heading>
+        <Text >
+          xddxdxdx
+        </Text>
       </Flex>
     </>
   )
