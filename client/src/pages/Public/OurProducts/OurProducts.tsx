@@ -1,9 +1,20 @@
 import { Box, Divider, Flex, Heading, Image } from '@chakra-ui/react'
+import imgBannerOurProducts from '@i/img-2603231157.jpeg'
+import imgCharlas from '@i/ourProducts/environmental_care/charlas.jpeg'
+import imgLibros from '@i/ourProducts/environmental_care/libros.jpeg'
+import imgPublicacion from '@i/ourProducts/environmental_care/publicacion.jpg'
+import imgAlimentosBajosEnSodio from '@i/ourProducts/foods/alimentos_bajo_en_sodio.jpg'
+import imgAlimentosFrescos from '@i/ourProducts/foods/alimentos_frescos.jpg'
+import imgAlimentosMicroondas from '@i/ourProducts/foods/alimentos_microondas.jpeg'
+import imgAlimentosSecos from '@i/ourProducts/foods/alimentos_secos.jpg'
+import imgAlimentosSinGluten from '@i/ourProducts/foods/alimentos_sin_gluten.jpg'
+import imgClases from '@i/ourProducts/physical_activity/clases.jpeg'
+import imgEquipamiento from '@i/ourProducts/physical_activity/equipamiento.jpeg'
+import imgIndumentaria from '@i/ourProducts/physical_activity/indumentaria.jpg'
 import React from 'react'
 import 'swiper/css/navigation'
 import { SwiperSlide } from 'swiper/react'
-import { Banner } from '../../../components'
-import { Carousel } from '../../../components/Carousel'
+import { Banner, Carousel } from '../../../components'
 import { GlobalColorSettings } from '../../../models/colors'
 export interface OurProductsInterface {}
 
@@ -13,7 +24,7 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
       <Banner
         title='Nuestros Productos'
         content=''
-        image='/src/assets/static/img/img-2603231157.jpeg'
+        image={imgBannerOurProducts}
       />
       <Flex
         justifyContent={'center'}
@@ -46,11 +57,7 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
                 bg={GlobalColorSettings.BGCONTAINERCAROUSEL}
                 overflow='hidden'
               >
-                <Image
-                  h='255'
-                  src='/src/assets/static/img/ourProducts/foods/alimentos_secos.jpg'
-                  objectFit='cover'
-                />
+                <Image h='255' src={imgAlimentosSecos} objectFit='cover' />
                 <Flex
                   h={150}
                   justifyContent='center'
@@ -79,7 +86,7 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
               >
                 <Image
                   h='255'
-                  src='/src/assets/static/img/ourProducts/foods/alimentos_bajo_en_sodio.jpg'
+                  src={imgAlimentosBajosEnSodio}
                   objectFit='cover'
                 />
                 <Flex
@@ -108,11 +115,7 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
                 bg={GlobalColorSettings.BGCONTAINERCAROUSEL}
                 overflow='hidden'
               >
-                <Image
-                  h='255'
-                  src='/src/assets/static/img/ourProducts/foods/alimentos_sin_gluten.jpg'
-                  objectFit='cover'
-                />
+                <Image h='255' src={imgAlimentosSinGluten} objectFit='cover' />
                 <Flex
                   h={150}
                   justifyContent='center'
@@ -139,11 +142,7 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
                 bg={GlobalColorSettings.BGCONTAINERCAROUSEL}
                 overflow='hidden'
               >
-                <Image
-                  h='255'
-                  src='/src/assets/static/img/ourProducts/foods/alimentos_microondas.jpeg'
-                  objectFit='cover'
-                />
+                <Image h='255' src={imgAlimentosMicroondas} objectFit='cover' />
                 <Flex
                   h={150}
                   justifyContent='center'
@@ -170,11 +169,7 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
                 bg={GlobalColorSettings.BGCONTAINERCAROUSEL}
                 overflow='hidden'
               >
-                <Image
-                  h='255'
-                  src='/src/assets/static/img/ourProducts/foods/alimentos_frescos.jpg'
-                  objectFit='cover'
-                />
+                <Image h='255' src={imgAlimentosFrescos} objectFit='cover' />
                 <Flex
                   h={150}
                   justifyContent='center'
@@ -215,12 +210,7 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
                 bg={GlobalColorSettings.BGCONTAINERCAROUSEL}
                 overflow='hidden'
               >
-                <Image
-                  h='255'
-                  w='100%'
-                  src='/src/assets/static/img/ourProducts/physical_activity/clases.jpeg'
-                  objectFit='cover'
-                />
+                <Image h='255' w='100%' src={imgClases} objectFit='cover' />
                 <Flex
                   h={150}
                   justifyContent='center'
@@ -247,11 +237,7 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
                 bg={GlobalColorSettings.BGCONTAINERCAROUSEL}
                 overflow='hidden'
               >
-                <Image
-                  h='255'
-                  src='/src/assets/static/img/ourProducts/physical_activity/equipamiento.jpeg'
-                  objectFit='cover'
-                />
+                <Image h='255' src={imgEquipamiento} objectFit='cover' />
                 <Flex
                   h={150}
                   justifyContent='center'
@@ -281,7 +267,7 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
                 <Image
                   h='255'
                   w='100%'
-                  src='/src/assets/static/img/ourProducts/physical_activity/indumentaria.jpg'
+                  src={imgIndumentaria}
                   objectFit='cover'
                 />
                 <Flex
@@ -324,12 +310,7 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
                 bg={GlobalColorSettings.BGCONTAINERCAROUSEL}
                 overflow='hidden'
               >
-                <Image
-                  h='255'
-                  w='100%'
-                  src='/src/assets/static/img/ourProducts/environmental_care/libros.jpeg'
-                  objectFit='cover'
-                />
+                <Image h='255' w='100%' src={imgLibros} objectFit='cover' />
                 <Flex
                   h={150}
                   justifyContent='center'
@@ -359,7 +340,7 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
                 <Image
                   h='255'
                   w='100%'
-                  src='/src/assets/static/img/ourProducts/environmental_care/publicacion.jpg'
+                  src={imgPublicacion}
                   objectFit='cover'
                 />
                 <Flex
@@ -388,11 +369,7 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
                 bg={GlobalColorSettings.BGCONTAINERCAROUSEL}
                 overflow='hidden'
               >
-                <Image
-                  h='255'
-                  src='/src/assets/static/img/ourProducts/environmental_care/charlas.jpeg'
-                  objectFit='cover'
-                />
+                <Image h='255' src={imgCharlas} objectFit='cover' />
                 <Flex
                   h={150}
                   justifyContent='center'

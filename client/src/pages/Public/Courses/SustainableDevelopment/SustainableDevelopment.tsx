@@ -1,4 +1,7 @@
 import { Box, Divider, Flex, Heading, Image, Text } from '@chakra-ui/react'
+import imgDivulgandoElCuidadoDeLaNaturaleza from '@i/courses/programa_responsabilidad_social_y_ambiental/divulgando_el_cuidado_de_la_naturaleza.jpg'
+import imgPequeniasAcciones from '@i/courses/programa_responsabilidad_social_y_ambiental/pequenias_acciones.jpg'
+import imgQueLesDejamosANuestrosHijos from '@i/courses/programa_responsabilidad_social_y_ambiental/que_les_dejamos_a_nuestros_hijos.jpg'
 import React from 'react'
 import { SwiperSlide } from 'swiper/react'
 import { Carousel } from '../../../../components/Carousel'
@@ -106,7 +109,7 @@ const SustainableDevelopment: React.FC<
                 <Image
                   h='255'
                   w='100%'
-                  src='/src/assets/static/img/courses/programa_responsabilidad_social_y_ambiental/pequenias_acciones.jpg'
+                  src={imgPequeniasAcciones}
                   objectFit='cover'
                 />
                 <Flex
@@ -148,7 +151,7 @@ const SustainableDevelopment: React.FC<
               >
                 <Image
                   h='255'
-                  src='/src/assets/static/img/courses/programa_responsabilidad_social_y_ambiental/divulgando_el_cuidado_de_la_naturaleza.jpg'
+                  src={imgDivulgandoElCuidadoDeLaNaturaleza}
                   objectFit='cover'
                 />
                 <Flex
@@ -190,7 +193,7 @@ const SustainableDevelopment: React.FC<
               >
                 <Image
                   h='255'
-                  src='/src/assets/static/img/courses/programa_responsabilidad_social_y_ambiental/que_les_dejamos_a_nuestros_hijos.jpg'
+                  src={imgQueLesDejamosANuestrosHijos}
                   objectFit='cover'
                 />
                 <Flex

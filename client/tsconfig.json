@@ -17,7 +17,8 @@
     "jsx": "react-jsx",
     "paths": {
       "@/": ["./src/"],
-      "@@/": ["./src/pages/"]
+      "@@/": ["./src/pages/"],
+      "@i/": ["./src/assets/static/img"]
     }
   },
   "include": ["src"],

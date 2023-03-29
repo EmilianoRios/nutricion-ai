@@ -1,4 +1,5 @@
 export * from './Banner'
+export * from './Carousel'
 export * from './Footer'
 export * from './Layout'
 export * from './Navbar'

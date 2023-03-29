@@ -1,4 +1,7 @@
 import { Box, Divider, Flex, Heading, Image, Text } from '@chakra-ui/react'
+import imgABailar from '@i/courses/plan_de_actividad_fisica/a_bailar.jpg'
+import imgLaFuerzaTambienAyuda from '@i/courses/plan_de_actividad_fisica/la_fuerza_también_ayuda.jpg'
+import imgOrganizandoMisActividades from '@i/courses/plan_de_actividad_fisica/organizando_mis_actividades.jpg'
 import React from 'react'
 import { SwiperSlide } from 'swiper/react'
 import { Carousel } from '../../../../components/Carousel'
@@ -97,11 +100,7 @@ const PhysicalActivityPlan: React.FC<PhysicalActivityPlanInterface> = () => {
                 bg={GlobalColorSettings.BGCONTAINERCAROUSEL}
                 overflow='hidden'
               >
-                <Image
-                  h='255'
-                  src='/src/assets/static/img/courses/plan_de_actividad_fisica/a_bailar.jpg'
-                  objectFit='cover'
-                />
+                <Image h='255' src={imgABailar} objectFit='cover' />
                 <Flex
                   h={150}
                   justifyContent='center'
@@ -142,7 +141,7 @@ const PhysicalActivityPlan: React.FC<PhysicalActivityPlanInterface> = () => {
                 <Image
                   h='255'
                   w='100%'
-                  src='/src/assets/static/img/courses/plan_de_actividad_fisica/la_fuerza_también_ayuda.jpg'
+                  src={imgLaFuerzaTambienAyuda}
                   objectFit='cover'
                 />
                 <Flex
@@ -185,7 +184,7 @@ const PhysicalActivityPlan: React.FC<PhysicalActivityPlanInterface> = () => {
                 <Image
                   h='255'
                   w='100%'
-                  src='/src/assets/static/img/courses/plan_de_actividad_fisica/organizando_mis_actividades.jpg'
+                  src={imgOrganizandoMisActividades}
                   objectFit='cover'
                 />
                 <Flex

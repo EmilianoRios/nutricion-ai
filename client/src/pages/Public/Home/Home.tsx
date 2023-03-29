@@ -1,4 +1,8 @@
 import { Box, Divider, Flex, Heading, Image, Link } from '@chakra-ui/react'
+import imgActividadFisica from '@i/home/actividad_fisica.jpg'
+import imgResponsabilidadSocialYAmbiental from '@i/home/img-2803230940.jpeg'
+import imgCalidadDeVida from '@i/home/img-28032309401.jpeg'
+import imgBannerHome from '@i/img-2003231015.jpg'
 import React from 'react'
 import { Link as ReactLink } from 'react-router-dom'
 import { Banner } from '../../../components'
@@ -13,7 +17,7 @@ const Home: React.FC<HomeInterface> = () => {
         title='NutriciónUP'
         content='Una empresa de más de 20 años , dedicada a promover y difundir la
           buena alimentación y la vida saludable.'
-        image='/src/assets/static/img/img-2003231015.jpg'
+        image={imgBannerHome}
       />
       <Flex
         flexDirection={'column'}
@@ -42,7 +46,7 @@ const Home: React.FC<HomeInterface> = () => {
               overflow='hidden'
             >
               <Image
-                src='/src/assets/static/img/home/img-28032309401.jpeg'
+                src={imgCalidadDeVida}
                 h={450}
                 objectFit='cover'
                 filter='blur(1px) brightness(0.7)'
@@ -78,7 +82,7 @@ const Home: React.FC<HomeInterface> = () => {
               overflow='hidden'
             >
               <Image
-                src='/src/assets/static/img/home/actividad_fisica.jpg'
+                src={imgActividadFisica}
                 h={450}
                 objectFit='cover'
                 filter='blur(2px) brightness(0.7)'
@@ -114,7 +118,7 @@ const Home: React.FC<HomeInterface> = () => {
               overflow='hidden'
             >
               <Image
-                src='/src/assets/static/img/home/img-2803230940.jpeg'
+                src={imgResponsabilidadSocialYAmbiental}
                 h={450}
                 objectFit='cover'
                 transition='0.2s'

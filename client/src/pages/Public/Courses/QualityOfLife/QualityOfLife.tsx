@@ -1,6 +1,10 @@
 import { Box, Divider, Flex, Heading, Image, Text } from '@chakra-ui/react'
+import imgAprendeAElegirLosAlimentos from '@i/courses/calidad_de_vida/Aprende_a_elegir_los_alimentos.jpg'
+import imgConociendoMisLimitesMentales from '@i/courses/calidad_de_vida/conociendo_mis_limites_mentales.jpg'
+import imgElEsfuerzoEnDireccionAlObjetivo from '@i/courses/calidad_de_vida/el_esfuerzo_en_direccion_al_objetivo.jpg'
 import React from 'react'
 import { SwiperSlide } from 'swiper/react'
+
 import { Carousel } from '../../../../components/Carousel'
 import { GlobalColorSettings } from '../../../../models/colors'
 export interface QualityOfLifeInterface {}
@@ -99,7 +103,7 @@ const QualityOfLife: React.FC<QualityOfLifeInterface> = () => {
               >
                 <Image
                   h='255'
-                  src='/src/assets/static/img/courses/calidad_de_vida/Aprende_a_elegir_los_alimentos.jpg'
+                  src={imgAprendeAElegirLosAlimentos}
                   objectFit='cover'
                 />
                 <Flex
@@ -141,7 +145,7 @@ const QualityOfLife: React.FC<QualityOfLifeInterface> = () => {
               >
                 <Image
                   h='255'
-                  src='/src/assets/static/img/courses/calidad_de_vida/conociendo_mis_limites_mentales.jpg'
+                  src={imgConociendoMisLimitesMentales}
                   objectFit='cover'
                 />
                 <Flex
@@ -183,7 +187,7 @@ const QualityOfLife: React.FC<QualityOfLifeInterface> = () => {
               >
                 <Image
                   h='255'
-                  src='/src/assets/static/img/courses/calidad_de_vida/el_esfuerzo_en_direccion_al_objetivo.jpg'
+                  src={imgElEsfuerzoEnDireccionAlObjetivo}
                   objectFit='cover'
                 />
                 <Flex
