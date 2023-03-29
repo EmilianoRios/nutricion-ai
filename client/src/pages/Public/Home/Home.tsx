@@ -21,7 +21,7 @@ const Home: React.FC<HomeInterface> = () => {
       />
       <Flex
         flexDirection={'column'}
-        w={['90%', '60%', '60%', '60%']}
+        w={['90%', '90%', '90%', '90%']}
         justifyContent='center'
         alignItems='center'
         m='auto'
@@ -32,8 +32,14 @@ const Home: React.FC<HomeInterface> = () => {
           h={2}
           my={4}
           borderRadius={20}
+          w={['90%', '90%', '90%', '50%']}
         />
-        <Flex gap={8} wrap='wrap' justifyContent='center' alignContent='center'>
+        <Flex
+          gap={{ base: 4, lg: 8 }}
+          wrap='wrap'
+          justifyContent='center'
+          alignContent='center'
+        >
           <Link
             as={ReactLink}
             to={PublicRoutes.QUALITYOFLIFE}
@@ -41,15 +47,16 @@ const Home: React.FC<HomeInterface> = () => {
           >
             <Box
               position={'relative'}
-              w={300}
+              w={{ base: 150, lg: 280 }}
               borderRadius={20}
               overflow='hidden'
             >
               <Image
                 src={imgCalidadDeVida}
-                h={450}
+                h={{ base: 225, lg: 420 }}
                 objectFit='cover'
                 filter='blur(1px) brightness(0.7)'
+                transition='0.2s'
                 _hover={{ filter: 'blur(1px) brightness(0.9)' }}
               />
               <Flex
@@ -64,7 +71,10 @@ const Home: React.FC<HomeInterface> = () => {
                 color='white'
                 pointerEvents='none'
               >
-                <Heading fontSize={24} textAlign='center'>
+                <Heading
+                  fontSize={{ base: '1rem', lg: '1.5rem' }}
+                  textAlign='center'
+                >
                   Calidad de vida
                 </Heading>
               </Flex>
@@ -77,15 +87,16 @@ const Home: React.FC<HomeInterface> = () => {
           >
             <Box
               position={'relative'}
-              w={300}
+              w={{ base: 150, lg: 280 }}
               borderRadius={20}
               overflow='hidden'
             >
               <Image
                 src={imgActividadFisica}
-                h={450}
+                h={{ base: 225, lg: 420 }}
                 objectFit='cover'
                 filter='blur(2px) brightness(0.7)'
+                transition='0.2s'
                 _hover={{ filter: 'blur(1px) brightness(0.9)' }}
               />
               <Flex
@@ -100,7 +111,10 @@ const Home: React.FC<HomeInterface> = () => {
                 color='white'
                 pointerEvents='none'
               >
-                <Heading fontSize={24} textAlign='center'>
+                <Heading
+                  fontSize={{ base: '1rem', lg: '1.5rem' }}
+                  textAlign='center'
+                >
                   Plan de actividad física
                 </Heading>
               </Flex>
@@ -113,13 +127,13 @@ const Home: React.FC<HomeInterface> = () => {
           >
             <Box
               position={'relative'}
-              w={300}
+              w={{ base: 150, lg: 280 }}
               borderRadius={20}
               overflow='hidden'
             >
               <Image
                 src={imgResponsabilidadSocialYAmbiental}
-                h={450}
+                h={{ base: 225, lg: 420 }}
                 objectFit='cover'
                 transition='0.2s'
                 filter='blur(1px) brightness(0.7)'
@@ -137,7 +151,10 @@ const Home: React.FC<HomeInterface> = () => {
                 color='white'
                 pointerEvents='none'
               >
-                <Heading fontSize={24} textAlign='center'>
+                <Heading
+                  fontSize={{ base: '1rem', lg: '1.5rem' }}
+                  textAlign='center'
+                >
                   Programa de Responsabilidad Social y Ambiental
                 </Heading>
               </Flex>
@@ -149,6 +166,7 @@ const Home: React.FC<HomeInterface> = () => {
           h={2}
           my={4}
           borderRadius={20}
+          w={['90%', '90%', '90%', '50%']}
         />
       </Flex>
     </>

@@ -8,34 +8,38 @@ const AboutUs: React.FC<AboutUsInterface> = () => {
     <>
       <Flex
         flexDirection='column'
-        w={['90%', '90%', '80%', '60%']}
+        w={['90%', '90%', '90%', '90%', '60%']}
         alignItems='center'
         m='auto'
         mt={8}
+        transition='0.2s'
+        h={{ base: '600px', sm: '630px', md: '630px', lg: '800px' }}
       >
-        <Heading p={4}>Quienes Somos</Heading>
-        <Divider
-          bgGradient={GlobalColorSettings.BGGRADIENTNAVBAR}
-          h={2}
-          my={4}
-          borderRadius={20}
-          w={['90%', '90%', '90%', '50%']}
-        />
+        <Heading p={4} fontSize={{ base: '1.5rem', lg: '2rem' }}>
+          Quienes Somos
+        </Heading>
         <Flex
           flexDirection='column'
           gap={10}
           justifyContent='center'
           alignItems='center'
           alignContent='center'
-          m='auto'
         >
+          <Divider
+            bgGradient={GlobalColorSettings.BGGRADIENTNAVBAR}
+            h={2}
+            my={4}
+            borderRadius={20}
+            w={['90%', '90%', '90%', '50%']}
+          />
           <Box
             bg={GlobalColorSettings.CONTAINERABOUTUS}
             borderRadius={20}
-            p={20}
+            p={10}
+            w={['90%', '90%', '90%', '90%', '60%']}
           >
-            <Heading fontSize={32}>Visión</Heading>
-            <Text fontSize={24} textAlign='justify'>
+            <Heading fontSize={{ base: '1.5rem', lg: '2rem' }}>Visión</Heading>
+            <Text fontSize={{ base: '1rem', lg: '1.5rem' }} textAlign='justify'>
               Tranformarnos en gestores del cambio, en motivadores hacia una
               sociedad respetuosa del medioambiente y de la salud actual y de
               futuras generaciones.
@@ -43,26 +47,30 @@ const AboutUs: React.FC<AboutUsInterface> = () => {
           </Box>
           <Box
             bg={GlobalColorSettings.CONTAINERABOUTUS}
-            p={20}
+            p={10}
+            w={['90%', '90%', '90%', '90%', '60%']}
             borderRadius={20}
           >
-            <Heading fontSize={32}>Misión</Heading>
+            <Heading fontSize={{ base: '1.5rem', lg: '2rem' }}>Misión</Heading>
             <Text>
-              <Text fontSize={24} textAlign='justify'>
+              <Text
+                fontSize={{ base: '1rem', lg: '1.5rem' }}
+                textAlign='justify'
+              >
                 Tranformarnos en gestores del cambio, en motivadores hacia una
                 sociedad respetuosa del medioambiente y de la salud actual y de
                 futuras generaciones.
               </Text>
             </Text>
           </Box>
+          <Divider
+            bgGradient={GlobalColorSettings.BGGRADIENTNAVBAR}
+            h={2}
+            my={4}
+            borderRadius={20}
+            w={['90%', '90%', '90%', '50%']}
+          />
         </Flex>
-        <Divider
-          bgGradient={GlobalColorSettings.BGGRADIENTNAVBAR}
-          h={2}
-          my={4}
-          borderRadius={20}
-          w={['90%', '90%', '90%', '50%']}
-        />
       </Flex>
     </>
   )

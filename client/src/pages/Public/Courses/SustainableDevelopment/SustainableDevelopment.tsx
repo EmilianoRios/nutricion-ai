@@ -20,10 +20,10 @@ const SustainableDevelopment: React.FC<
         m='auto'
         mt={8}
       >
-        <Heading fontSize={40} p={4}>
+        <Heading fontSize={{ base: '1.5rem', lg: '2rem' }}>
           Nuestro Curso
         </Heading>
-        <Heading fontSize={40} p={4}>
+        <Heading fontSize={{ base: '1.5rem', lg: '2rem' }} textAlign='center'>
           Programa de Responsabilidad Social y Ambiental
         </Heading>
         <Divider
@@ -39,7 +39,7 @@ const SustainableDevelopment: React.FC<
           px={12}
           py={4}
         >
-          <Text pt='5' fontSize={23} textAlign='justify'>
+          <Text fontSize={{ base: '0.9rem', lg: '1.2rem' }} textAlign='justify'>
             Los cursos de Programa de Responsabilidad Social y Ambiental son una
             excelente opción para aquellos interesados en aprender cómo pueden
             contribuir a un futuro más sostenible y responsable en términos
@@ -48,14 +48,22 @@ const SustainableDevelopment: React.FC<
             dejamos a nuestros hijos", ofrecen diferentes enfoques para abordar
             estos temas.
           </Text>
-          <Text pt='5' fontSize={23} textAlign='justify'>
+          <Text
+            pt='5'
+            fontSize={{ base: '0.9rem', lg: '1.2rem' }}
+            textAlign='justify'
+          >
             En el curso "Pequeñas acciones", los participantes aprenden a
             realizar cambios positivos en su vida diaria para reducir su impacto
             en el medio ambiente. Los participantes aprenden sobre prácticas
             sostenibles, como el uso de energías renovables, la reducción del
             desperdicio de alimentos y la reducción del uso del plástico.
           </Text>
-          <Text pt='5' fontSize={23} textAlign='justify'>
+          <Text
+            pt='5'
+            fontSize={{ base: '0.9rem', lg: '1.2rem' }}
+            textAlign='justify'
+          >
             En el curso "Divulgando el cuidado de la naturaleza", los
             participantes aprenden a compartir información y promover el cuidado
             del medio ambiente en su comunidad y en la sociedad en general. Los
@@ -63,14 +71,22 @@ const SustainableDevelopment: React.FC<
             efectiva y a diseñar campañas de concientización para promover
             cambios positivos en la sociedad.
           </Text>
-          <Text pt='5' fontSize={23} textAlign='justify'>
+          <Text
+            pt='5'
+            fontSize={{ base: '0.9rem', lg: '1.2rem' }}
+            textAlign='justify'
+          >
             En el curso "Que les dejamos a nuestros hijos", los participantes
             reflexionan sobre el legado que quieren dejar a las futuras
             generaciones. Los participantes aprenden sobre los impactos de las
             decisiones y acciones actuales en el medio ambiente y en la sociedad
             y cómo pueden contribuir a un futuro más sostenible y responsable.
           </Text>
-          <Text pt='5' fontSize={23} textAlign='justify'>
+          <Text
+            pt='5'
+            fontSize={{ base: '0.9rem', lg: '1.2rem' }}
+            textAlign='justify'
+          >
             En general, estos cursos de Programa de Responsabilidad Social y
             Ambiental son una excelente opción para aquellos interesados en
             aprender cómo pueden contribuir a un futuro más sostenible y
@@ -89,7 +105,7 @@ const SustainableDevelopment: React.FC<
           borderRadius={20}
           w={['90%', '90%', '90%', '50%']}
         />
-        <Heading>
+        <Heading fontSize={{ base: '1.5rem', lg: '2rem' }} textAlign='center'>
           Cursos de programa de responsabilidad social y ambiental
         </Heading>
         <Carousel>

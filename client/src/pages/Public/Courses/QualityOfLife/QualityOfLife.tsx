@@ -19,10 +19,12 @@ const QualityOfLife: React.FC<QualityOfLifeInterface> = () => {
         m='auto'
         mt={8}
       >
-        <Heading fontSize={40} p={4}>
+        <Heading fontSize={{ base: '1.5rem', lg: '2rem' }}>
           Nuestro Curso
         </Heading>
-        <Heading fontSize={40}>Calidad de Vida</Heading>
+        <Heading fontSize={{ base: '1.5rem', lg: '2rem' }}>
+          Calidad de Vida
+        </Heading>
         <Divider
           bgGradient={GlobalColorSettings.BGGRADIENTNAVBAR}
           h={2}
@@ -36,13 +38,17 @@ const QualityOfLife: React.FC<QualityOfLifeInterface> = () => {
           px={12}
           py={4}
         >
-          <Text pt='5' fontSize={23} textAlign='justify'>
+          <Text fontSize={{ base: '0.9rem', lg: '1.2rem' }} textAlign='justify'>
             Los cursos de calidad de vida pueden abordar diferentes temas que
             son esenciales para mejorar nuestra salud y bienestar en general.
             Entre ellos se encuentran: "Aprender a elegir los alimentos",
             "Conociendo mis límites" y "El esfuerzo en dirección al objetivo".
           </Text>
-          <Text pt='5' fontSize={23} textAlign='justify'>
+          <Text
+            pt='5'
+            fontSize={{ base: '0.9rem', lg: '1.2rem' }}
+            textAlign='justify'
+          >
             En el curso "Aprender a elegir los alimentos", los participantes
             aprenderán a seleccionar los alimentos más saludables para mantener
             una dieta equilibrada y nutricionalmente adecuada. Se discutirán los
@@ -53,7 +59,11 @@ const QualityOfLife: React.FC<QualityOfLifeInterface> = () => {
             mejores prácticas para comprar y preparar alimentos frescos, y cómo
             ajustar las porciones para alcanzar un peso saludable.
           </Text>
-          <Text pt='5' fontSize={23} textAlign='justify'>
+          <Text
+            pt='5'
+            fontSize={{ base: '0.9rem', lg: '1.2rem' }}
+            textAlign='justify'
+          >
             El curso "Conociendo mis límites" se enfoca en ayudar a las personas
             a reconocer y respetar sus límites físicos, mentales y emocionales.
             Se discuten diferentes técnicas para gestionar el estrés, como la
@@ -63,7 +73,11 @@ const QualityOfLife: React.FC<QualityOfLifeInterface> = () => {
             sobrecarga y se proporcionan técnicas de autocuidado para prevenir
             el agotamiento.
           </Text>
-          <Text pt='5' fontSize={23} textAlign='justify'>
+          <Text
+            pt='5'
+            fontSize={{ base: '0.9rem', lg: '1.2rem' }}
+            textAlign='justify'
+          >
             El curso "El esfuerzo en dirección al objetivo" se enfoca en ayudar
             a las personas a establecer metas y objetivos realistas y
             alcanzables. Se discuten diferentes estrategias para mantener la
@@ -72,7 +86,11 @@ const QualityOfLife: React.FC<QualityOfLifeInterface> = () => {
             largo plazo. También se discuten los beneficios de la perseverancia
             y la resiliencia en el logro de los objetivos.
           </Text>
-          <Text pt='5' fontSize={23} textAlign='justify'>
+          <Text
+            pt='5'
+            fontSize={{ base: '0.9rem', lg: '1.2rem' }}
+            textAlign='justify'
+          >
             En general, el curso de calidad de vida ofrece herramientas valiosas
             y prácticas para mejorar todos los aspectos de tu vida. Si estás
             interesado en maximizar tu bienestar y felicidad, este curso es
@@ -86,7 +104,9 @@ const QualityOfLife: React.FC<QualityOfLifeInterface> = () => {
           borderRadius={20}
           w={['90%', '90%', '90%', '50%']}
         />
-        <Heading>Cursos de calidad de vida</Heading>
+        <Heading fontSize={{ base: '1.5rem', lg: '2rem' }}>
+          Cursos de calidad de vida
+        </Heading>
         <Carousel>
           <SwiperSlide>
             <Flex

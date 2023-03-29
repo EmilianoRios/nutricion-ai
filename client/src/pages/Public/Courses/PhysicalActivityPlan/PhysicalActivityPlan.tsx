@@ -18,10 +18,10 @@ const PhysicalActivityPlan: React.FC<PhysicalActivityPlanInterface> = () => {
         m='auto'
         mt={8}
       >
-        <Heading fontSize={40} p={4}>
+        <Heading fontSize={{ base: '1.5rem', lg: '2rem' }}>
           Nuestro Curso
         </Heading>
-        <Heading fontSize={40} p={4}>
+        <Heading fontSize={{ base: '1.5rem', lg: '2rem' }}>
           Plan de Actividad Física
         </Heading>
         <Divider
@@ -37,14 +37,18 @@ const PhysicalActivityPlan: React.FC<PhysicalActivityPlanInterface> = () => {
           px={12}
           py={4}
         >
-          <Text pt='5' fontSize={23} textAlign='justify'>
+          <Text fontSize={{ base: '0.9rem', lg: '1.2rem' }} textAlign='justify'>
             Los cursos de Plan de actividad física son una excelente opción para
             mejorar nuestra salud y bienestar a través de la actividad física.
             Algunos cursos específicos, como "A bailar", "La fuerza también
             ayuda" y "Organizando mis actividades" ofrecen diferentes enfoques
             para mejorar nuestra salud y forma física.
           </Text>
-          <Text pt='5' fontSize={23} textAlign='justify'>
+          <Text
+            pt='5'
+            fontSize={{ base: '0.9rem', lg: '1.2rem' }}
+            textAlign='justify'
+          >
             En el curso "A bailar", los participantes aprenden a moverse al
             ritmo de la música y a mejorar su coordinación, equilibrio y
             flexibilidad. También pueden aprender diferentes estilos de baile,
@@ -52,7 +56,11 @@ const PhysicalActivityPlan: React.FC<PhysicalActivityPlanInterface> = () => {
             elegir la opción que mejor se adapte a sus preferencias y
             habilidades.
           </Text>
-          <Text pt='5' fontSize={23} textAlign='justify'>
+          <Text
+            pt='5'
+            fontSize={{ base: '0.9rem', lg: '1.2rem' }}
+            textAlign='justify'
+          >
             El curso "La fuerza también ayuda" se enfoca en el entrenamiento de
             fuerza y ​​resistencia muscular. Los participantes aprenden
             diferentes ejercicios de resistencia, como levantamiento de pesas o
@@ -61,7 +69,11 @@ const PhysicalActivityPlan: React.FC<PhysicalActivityPlanInterface> = () => {
             los beneficios para la salud de la fuerza muscular, como la
             prevención de lesiones y la mejora del equilibrio.
           </Text>
-          <Text pt='5' fontSize={23} textAlign='justify'>
+          <Text
+            pt='5'
+            fontSize={{ base: '0.9rem', lg: '1.2rem' }}
+            textAlign='justify'
+          >
             El curso "Organizando mis actividades" enseña a los participantes
             cómo planificar y organizar su actividad física diaria para
             maximizar sus beneficios para la salud y minimizar los riesgos de
@@ -69,7 +81,11 @@ const PhysicalActivityPlan: React.FC<PhysicalActivityPlanInterface> = () => {
             realistas y a programar sus entrenamientos para adaptarse a su
             horario y rutina diaria.
           </Text>
-          <Text pt='5' fontSize={23} textAlign='justify'>
+          <Text
+            pt='5'
+            fontSize={{ base: '0.9rem', lg: '1.2rem' }}
+            textAlign='justify'
+          >
             En general, estos cursos de Plan de actividad física son una
             excelente opción para mejorar nuestra salud y bienestar a través del
             ejercicio. Al inscribirse en estos cursos, los participantes
@@ -85,7 +101,9 @@ const PhysicalActivityPlan: React.FC<PhysicalActivityPlanInterface> = () => {
           borderRadius={20}
           w={['90%', '90%', '90%', '50%']}
         />
-        <Heading>Cursos de actividad física</Heading>
+        <Heading fontSize={{ base: '1.5rem', lg: '2rem' }}>
+          Cursos de actividad física
+        </Heading>
         <Carousel>
           <SwiperSlide>
             <Flex

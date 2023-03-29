@@ -25,17 +25,17 @@ const Carousel: React.FC<CarouselInterface> = ({ children }) => {
     // para pantallas medianas
     768: {
       slidesPerView: 2,
-      spaceBetween: 30,
+      spaceBetween: 20,
     },
     // para pantallas medianas
     992: {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 20,
     },
     // para pantallas grandes
-    1200: {
+    1400: {
       slidesPerView: 3,
-      spaceBetween: 40,
+      spaceBetween: 20,
     },
   }
 
