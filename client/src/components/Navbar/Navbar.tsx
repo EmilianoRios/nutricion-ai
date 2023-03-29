@@ -5,6 +5,7 @@ import {
   Flex,
   Heading,
   IconButton,
+  Image,
   Link,
   Spacer,
 } from '@chakra-ui/react'
@@ -30,11 +31,24 @@ const Navbar: React.FC<NavbarInterface> = () => {
         m='auto'
       >
         <Flex alignItems='center' p={2}>
-          <Heading as='h1'>
-            <Link to='/' as={ReactLink} _hover={{ textDecoration: 'None' }}>
-              🍉NutriciónUP
-            </Link>
-          </Heading>
+          <Link to='/' as={ReactLink} _hover={{ textDecoration: 'None' }}>
+            <Flex
+              justifyContent={'center'}
+              alignItems={'center'}
+              alignContent={'center'}
+            >
+              <Box>
+                <Image
+                  h={12}
+                  w={12}
+                  src='/src/assets/static/logo/nutricion.png'
+                />
+              </Box>
+              <Box>
+                <Heading>NutriciónUP</Heading>
+              </Box>
+            </Flex>
+          </Link>
         </Flex>
         <Spacer />
         <Flex position='sticky' top='1rem' right='1rem' align='center'>

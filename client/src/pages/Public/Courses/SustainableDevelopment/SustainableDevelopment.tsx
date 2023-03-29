@@ -1,60 +1,96 @@
-import React from 'react';
-export interface SustainableDevelopmentInterface {}
-import { Flex, Heading, Box, Text, Image, Button, Divider} from '@chakra-ui/react'
+import { Box, Divider, Flex, Heading, Image, Text } from '@chakra-ui/react'
+import React from 'react'
 import { SwiperSlide } from 'swiper/react'
 import { Carousel } from '../../../../components/Carousel'
 import { GlobalColorSettings } from '../../../../models/colors'
+export interface SustainableDevelopmentInterface {}
 
-const SustainableDevelopment : React.FC<SustainableDevelopmentInterface> = () => {
-	return (
-	<>
-	<Flex
+const SustainableDevelopment: React.FC<
+  SustainableDevelopmentInterface
+> = () => {
+  return (
+    <>
+      <Flex
         flexDirection='column'
-        w={['90%', '90%', '80%', '1150px']}
+        w={['90%', '90%', '90%', '1150px']}
         alignItems='center'
         m='auto'
         mt={8}
-	  >
-	<Heading fontSize={40} p={4}>Nuestro Curso</Heading>
-	<Heading fontSize={40} p={4}>Programa de Responsabilidad Social y Ambiental</Heading>
-	<Divider
+      >
+        <Heading fontSize={40} p={4}>
+          Nuestro Curso
+        </Heading>
+        <Heading fontSize={40} p={4}>
+          Programa de Responsabilidad Social y Ambiental
+        </Heading>
+        <Divider
           bgGradient={GlobalColorSettings.BGGRADIENTNAVBAR}
           h={2}
           my={4}
           borderRadius={20}
           w={['90%', '90%', '90%', '50%']}
         />
-	<Box 
-		bg={GlobalColorSettings.CONTAINERABOUTUS}
-		borderRadius={20}
-    px={12}
-    py={4}>
-		<Text pt='5' fontSize={23} textAlign='justify'>
-			Los cursos de Programa de Responsabilidad Social y Ambiental son una excelente opción para aquellos interesados en aprender cómo pueden contribuir a un futuro más sostenible y responsable en términos sociales y ambientales. Algunos cursos específicos, como "Pequeñas acciones", "Divulgando el cuidado de la naturaleza" y "Que les dejamos a nuestros hijos", ofrecen diferentes enfoques para abordar estos temas.
-		</Text>
-		<Text pt='5' fontSize={23} textAlign='justify'>
-			En el curso "Pequeñas acciones", los participantes aprenden a realizar cambios positivos en su vida diaria para reducir su impacto en el medio ambiente. Los participantes aprenden sobre prácticas sostenibles, como el uso de energías renovables, la reducción del desperdicio de alimentos y la reducción del uso del plástico.
-		</Text>
-		<Text pt='5' fontSize={23} textAlign='justify'>
-			En el curso "Divulgando el cuidado de la naturaleza", los participantes aprenden a compartir información y promover el cuidado del medio ambiente en su comunidad y en la sociedad en general. Los participantes aprenden a desarrollar habilidades de comunicación efectiva y a diseñar campañas de concientización para promover cambios positivos en la sociedad.
-		</Text>
-		<Text pt='5' fontSize={23} textAlign='justify'> 
-			En el curso "Que les dejamos a nuestros hijos", los participantes reflexionan sobre el legado que quieren dejar a las futuras generaciones. Los participantes aprenden sobre los impactos de las decisiones y acciones actuales en el medio ambiente y en la sociedad y cómo pueden contribuir a un futuro más sostenible y responsable.
-		</Text>
-		<Text pt='5' fontSize={23} textAlign='justify'>
-		En general, estos cursos de Programa de Responsabilidad Social y Ambiental son una excelente opción para aquellos interesados en aprender cómo pueden contribuir a un futuro más sostenible y responsable en términos sociales y ambientales. Al inscribirse en estos cursos, los participantes adquieren habilidades prácticas para realizar cambios positivos en su vida diaria, compartir información y promover el cuidado del medio ambiente en su comunidad y en la sociedad en general, y reflexionar sobre el legado que quieren dejar a las futuras generaciones.
-		</Text>
-	</Box>
-	<Divider
+        <Box
+          bg={GlobalColorSettings.CONTAINERABOUTUS}
+          borderRadius={20}
+          px={12}
+          py={4}
+        >
+          <Text pt='5' fontSize={23} textAlign='justify'>
+            Los cursos de Programa de Responsabilidad Social y Ambiental son una
+            excelente opción para aquellos interesados en aprender cómo pueden
+            contribuir a un futuro más sostenible y responsable en términos
+            sociales y ambientales. Algunos cursos específicos, como "Pequeñas
+            acciones", "Divulgando el cuidado de la naturaleza" y "Que les
+            dejamos a nuestros hijos", ofrecen diferentes enfoques para abordar
+            estos temas.
+          </Text>
+          <Text pt='5' fontSize={23} textAlign='justify'>
+            En el curso "Pequeñas acciones", los participantes aprenden a
+            realizar cambios positivos en su vida diaria para reducir su impacto
+            en el medio ambiente. Los participantes aprenden sobre prácticas
+            sostenibles, como el uso de energías renovables, la reducción del
+            desperdicio de alimentos y la reducción del uso del plástico.
+          </Text>
+          <Text pt='5' fontSize={23} textAlign='justify'>
+            En el curso "Divulgando el cuidado de la naturaleza", los
+            participantes aprenden a compartir información y promover el cuidado
+            del medio ambiente en su comunidad y en la sociedad en general. Los
+            participantes aprenden a desarrollar habilidades de comunicación
+            efectiva y a diseñar campañas de concientización para promover
+            cambios positivos en la sociedad.
+          </Text>
+          <Text pt='5' fontSize={23} textAlign='justify'>
+            En el curso "Que les dejamos a nuestros hijos", los participantes
+            reflexionan sobre el legado que quieren dejar a las futuras
+            generaciones. Los participantes aprenden sobre los impactos de las
+            decisiones y acciones actuales en el medio ambiente y en la sociedad
+            y cómo pueden contribuir a un futuro más sostenible y responsable.
+          </Text>
+          <Text pt='5' fontSize={23} textAlign='justify'>
+            En general, estos cursos de Programa de Responsabilidad Social y
+            Ambiental son una excelente opción para aquellos interesados en
+            aprender cómo pueden contribuir a un futuro más sostenible y
+            responsable en términos sociales y ambientales. Al inscribirse en
+            estos cursos, los participantes adquieren habilidades prácticas para
+            realizar cambios positivos en su vida diaria, compartir información
+            y promover el cuidado del medio ambiente en su comunidad y en la
+            sociedad en general, y reflexionar sobre el legado que quieren dejar
+            a las futuras generaciones.
+          </Text>
+        </Box>
+        <Divider
           bgGradient={GlobalColorSettings.BGGRADIENTNAVBAR}
           h={2}
           my={4}
           borderRadius={20}
           w={['90%', '90%', '90%', '50%']}
         />
-		<Heading>Cursos de programa de responsabilidad social y ambiental</Heading>
-		<Carousel>
-		<SwiperSlide>
+        <Heading>
+          Cursos de programa de responsabilidad social y ambiental
+        </Heading>
+        <Carousel>
+          <SwiperSlide>
             <Flex
               flexDirection='column'
               justifyContent={'center'}
@@ -78,17 +114,26 @@ const SustainableDevelopment : React.FC<SustainableDevelopmentInterface> = () =>
                   justifyContent='center'
                   alignItems='center'
                   alignContent='center'
-				  flexDirection='column'
+                  flexDirection='column'
                 >
                   <Heading textAlign='center' fontSize={24} mb={4}>
-				  	        Pequeñas acciones
+                    Pequeñas acciones
                   </Heading>
-				  <Text bg={GlobalColorSettings.BGPRICESCOURSES} borderRadius={50} px={6} py={2} fontSize='18' as='b'>$0</Text>
+                  <Text
+                    bg={GlobalColorSettings.BGPRICESCOURSES}
+                    borderRadius={50}
+                    px={6}
+                    py={2}
+                    fontSize='18'
+                    as='b'
+                  >
+                    $0
+                  </Text>
                 </Flex>
               </Box>
             </Flex>
           </SwiperSlide>
-		  <SwiperSlide>
+          <SwiperSlide>
             <Flex
               flexDirection='column'
               justifyContent={'center'}
@@ -111,17 +156,26 @@ const SustainableDevelopment : React.FC<SustainableDevelopmentInterface> = () =>
                   justifyContent='center'
                   alignItems='center'
                   alignContent='center'
-				  flexDirection='column'
+                  flexDirection='column'
                 >
                   <Heading textAlign='center' fontSize={24} mb={4}>
-				  	        Divulgando el cuidado de la naturaleza 
+                    Divulgando el cuidado de la naturaleza
                   </Heading>
-				  <Text bg={GlobalColorSettings.BGPRICESCOURSES} borderRadius={50} px={6} py={2} fontSize='18' as='b'>$310</Text>
+                  <Text
+                    bg={GlobalColorSettings.BGPRICESCOURSES}
+                    borderRadius={50}
+                    px={6}
+                    py={2}
+                    fontSize='18'
+                    as='b'
+                  >
+                    $310
+                  </Text>
                 </Flex>
               </Box>
             </Flex>
           </SwiperSlide>
-		  <SwiperSlide>
+          <SwiperSlide>
             <Flex
               flexDirection='column'
               justifyContent={'center'}
@@ -144,20 +198,33 @@ const SustainableDevelopment : React.FC<SustainableDevelopmentInterface> = () =>
                   justifyContent='center'
                   alignItems='center'
                   alignContent='center'
-				  flexDirection='column'
+                  flexDirection='column'
                 >
                   <Heading textAlign='center' fontSize={24} mb={4}>
-				  	Que les dejamos a nuestros hijos
+                    Que les dejamos a nuestros hijos
                   </Heading>
-				  <Text bg={GlobalColorSettings.BGPRICESCOURSES} borderRadius={50} px={6} py={2} fontSize='18' as='b'>$500</Text>
+                  <Text
+                    bg={GlobalColorSettings.BGPRICESCOURSES}
+                    borderRadius={50}
+                    px={6}
+                    py={2}
+                    fontSize='18'
+                    as='b'
+                  >
+                    $500
+                  </Text>
                 </Flex>
               </Box>
             </Flex>
           </SwiperSlide>
-		</Carousel>
-	</Flex>
-</>
-	)
-};
+          <Box w='100%' m='auto'>
+            <div className='swiper-button-prev' id='ts-prev'></div>
+            <div className='swiper-button-next' id='ts-next'></div>
+          </Box>
+        </Carousel>
+      </Flex>
+    </>
+  )
+}
 
-export default SustainableDevelopment;
+export default SustainableDevelopment

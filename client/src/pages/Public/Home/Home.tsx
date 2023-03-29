@@ -10,7 +10,7 @@ const Home: React.FC<HomeInterface> = () => {
   return (
     <>
       <Banner
-        title='NutricionUP'
+        title='NutriciónUP'
         content='Una empresa de más de 20 años , dedicada a promover y difundir la
           buena alimentación y la vida saludable.'
         image='/src/assets/static/img/img-2003231015.jpg'
