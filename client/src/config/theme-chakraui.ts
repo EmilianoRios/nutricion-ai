@@ -19,6 +19,7 @@ const themeChakra = extendTheme({
     gray: {
       800: '#181818',
     },
+    white: '#f9fcec',
   },
 })
 

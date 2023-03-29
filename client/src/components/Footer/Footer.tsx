@@ -2,18 +2,23 @@ import { Box, Flex, Icon, Text } from '@chakra-ui/react'
 import React from 'react'
 import { BsFillTelephoneFill, BsInstagram } from 'react-icons/bs'
 import { HiMail } from 'react-icons/hi'
+import { GlobalColorSettings } from '../../models/colors'
 export interface FooterInterface {}
 
 const Footer: React.FC<FooterInterface> = () => {
   return (
     <Box
-      backgroundColor='orange.600'
-      color='white'
+      backgroundColor={GlobalColorSettings.BGFOOTER}
+      color={GlobalColorSettings.FONTCOLORFOOTER}
       mt={20}
       py={8}
       px={{ base: 4, md: 8 }}
     >
-      <Flex justifyContent='space-between' alignItems='center' flexWrap='wrap'>
+      <Flex
+        justifyContent={['center', 'center', 'space-between', 'space-between']}
+        alignItems='center'
+        flexWrap='wrap'
+      >
         <Box
           display='flex'
           flexDirection='column'
@@ -22,21 +27,33 @@ const Footer: React.FC<FooterInterface> = () => {
         >
           <Flex mx={2} alignItems='center' gap={2}>
             <Icon as={BsFillTelephoneFill} />
-            +54 (370) 400-0000
+            <Text>+54 (370) 400-0000</Text>
           </Flex>
           <Flex mx={2} alignItems='center' gap={2}>
             <Icon as={HiMail} />
-            nutricionup_contacto@gmail.com
+            <Text>nutricionup_contacto@gmail.com</Text>
           </Flex>
           <Flex mx={2} alignItems='center' gap={2}>
             <Icon as={BsInstagram} />
-            nutricionup
+            <Text>nutricionup</Text>
           </Flex>
         </Box>
-        <Box>
-          <Text fontSize='lg'>© 2023 Todos los derechos reservados.</Text>
-          <Text fontSize='sm'>Avila Lautaro, Rios Emiliano.</Text>
-        </Box>
+        <Flex
+          flexDirection='column'
+          alignItems='center'
+          pt={['8', '8', 'unset', 'unset']}
+        >
+          <Flex>
+            <Text fontSize='lg' as='b'>
+              © 2023 Todos los derechos reservados.
+            </Text>
+          </Flex>
+          <Flex>
+            <Text fontSize='lg' as='b'>
+              Avila Lautaro, Rios Emiliano.
+            </Text>
+          </Flex>
+        </Flex>
       </Flex>
     </Box>
   )

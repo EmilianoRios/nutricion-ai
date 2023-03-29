@@ -13,24 +13,34 @@ export interface CarouselInterface {
 const Carousel: React.FC<CarouselInterface> = ({ children }) => {
   const breakpoints = {
     // para pantallas pequeñas
+    600: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    // para pantallas pequeñas
     640: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 20,
     },
     // para pantallas medianas
     768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    // para pantallas medianas
+    992: {
       slidesPerView: 3,
       spaceBetween: 30,
     },
     // para pantallas grandes
-    1024: {
+    1200: {
       slidesPerView: 3,
       spaceBetween: 40,
     },
   }
 
   return (
-    <Box w='100%' h='500px' border='1px solid black' p={8}>
+    <Box w='100%' h='500px' p={8}>
       <Swiper
         freeMode={true}
         modules={[FreeMode, Navigation, Autoplay]}
@@ -41,7 +51,7 @@ const Carousel: React.FC<CarouselInterface> = ({ children }) => {
         }}
         autoplay={{
           delay: 1200,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
         }}
       >
         {children}

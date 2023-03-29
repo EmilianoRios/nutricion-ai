@@ -13,7 +13,7 @@ const Banner: React.FC<BannerInterface> = ({ title, content, image }) => {
         pt={2}
         src={image}
         alt='Nutricion'
-        filter={'blur(3px)'}
+        filter='blur(2px) brightness(0.5)'
         w='100%'
         height={['300px', '300px', '300px', '500px']}
         objectFit={'cover'}
@@ -29,10 +29,19 @@ const Banner: React.FC<BannerInterface> = ({ title, content, image }) => {
         textAlign='center'
         color='white'
       >
-        <Heading as='h1' fontSize={['2rem', '3rem', '4rem', '5rem']}>
+        <Heading
+          as='h1'
+          fontSize={['2rem', '3rem', '4rem', '5rem']}
+          textShadow='1px 1px 20px rgba(0, 0, 0, 1)'
+        >
           {title}
         </Heading>
-        <Text fontSize={['0.9rem', '0.9rem', '1rem', '2rem']}>{content}</Text>
+        <Text
+          fontSize={['0.9rem', '0.9rem', '1rem', '2rem']}
+          textShadow='1px 1px 12px rgba(0, 0, 0, 1)'
+        >
+          {content}
+        </Text>
       </Flex>
     </Flex>
   )

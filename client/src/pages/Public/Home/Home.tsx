@@ -2,6 +2,7 @@ import { Box, Divider, Flex, Heading, Image, Link } from '@chakra-ui/react'
 import React from 'react'
 import { Link as ReactLink } from 'react-router-dom'
 import { Banner } from '../../../components'
+import { GlobalColorSettings } from '../../../models/colors'
 import { PublicRoutes } from '../../../models/routes'
 export interface HomeInterface {}
 
@@ -21,8 +22,13 @@ const Home: React.FC<HomeInterface> = () => {
         alignItems='center'
         m='auto'
       >
-        <Heading pb={4}>Nuestros Cursos</Heading>
-        <Divider bg='orange' h={2} />
+        <Heading>Nuestros Cursos</Heading>
+        <Divider
+          bgGradient={GlobalColorSettings.BGGRADIENTNAVBAR}
+          h={2}
+          my={4}
+          borderRadius={20}
+        />
         <Flex gap={8} wrap='wrap' justifyContent='center' alignContent='center'>
           <Link
             as={ReactLink}
@@ -30,19 +36,29 @@ const Home: React.FC<HomeInterface> = () => {
             _hover={{ textDecoration: 'none' }}
           >
             <Box
-              bg='red'
-              border='1px solid black'
+              position={'relative'}
               w={300}
               borderRadius={20}
               overflow='hidden'
             >
-              <Image h='300' src='/src/assets/static/img/home/calidad_de_vida.jpg'/>
-
+              <Image
+                src='/src/assets/static/img/home/img-28032309401.jpeg'
+                h={450}
+                objectFit='cover'
+                filter='blur(1px) brightness(0.7)'
+                _hover={{ filter: 'blur(1px) brightness(0.9)' }}
+              />
               <Flex
-                p={4}
-                height={200}
                 justifyContent='center'
                 alignItems='center'
+                top='50%'
+                left='50%'
+                transform='translate(-50%,-50%)'
+                position='absolute'
+                display='inline-block'
+                textAlign='center'
+                color='white'
+                pointerEvents='none'
               >
                 <Heading fontSize={24} textAlign='center'>
                   Calidad de vida
@@ -56,18 +72,29 @@ const Home: React.FC<HomeInterface> = () => {
             _hover={{ textDecoration: 'none' }}
           >
             <Box
-              bg='red'
-              border='1px solid black'
+              position={'relative'}
               w={300}
               borderRadius={20}
               overflow='hidden'
             >
-              <Image h='300' src='/src/assets/static/img/home/actividad_fisica.jpg'/>
+              <Image
+                src='/src/assets/static/img/home/actividad_fisica.jpg'
+                h={450}
+                objectFit='cover'
+                filter='blur(2px) brightness(0.7)'
+                _hover={{ filter: 'blur(1px) brightness(0.9)' }}
+              />
               <Flex
-                p={4}
-                height={200}
                 justifyContent='center'
                 alignItems='center'
+                top='50%'
+                left='50%'
+                transform='translate(-50%,-50%)'
+                position='absolute'
+                display='inline-block'
+                textAlign='center'
+                color='white'
+                pointerEvents='none'
               >
                 <Heading fontSize={24} textAlign='center'>
                   Plan de actividad física
@@ -81,18 +108,30 @@ const Home: React.FC<HomeInterface> = () => {
             _hover={{ textDecoration: 'none' }}
           >
             <Box
-              bg='red'
-              border='1px solid black'
+              position={'relative'}
               w={300}
               borderRadius={20}
               overflow='hidden'
             >
-              <Image h='300' src='/src/assets/static/img/home/responsabilidad_social_y_ambiental.jpg' />
+              <Image
+                src='/src/assets/static/img/home/img-2803230940.jpeg'
+                h={450}
+                objectFit='cover'
+                transition='0.2s'
+                filter='blur(1px) brightness(0.7)'
+                _hover={{ filter: 'blur(1px) brightness(0.9)' }}
+              />
               <Flex
-                p={4}
-                height={200}
                 justifyContent='center'
                 alignItems='center'
+                top='50%'
+                left='50%'
+                transform='translate(-50%,-50%)'
+                position='absolute'
+                display='inline-block'
+                textAlign='center'
+                color='white'
+                pointerEvents='none'
               >
                 <Heading fontSize={24} textAlign='center'>
                   Programa de Responsabilidad Social y Ambiental
@@ -101,6 +140,12 @@ const Home: React.FC<HomeInterface> = () => {
             </Box>
           </Link>
         </Flex>
+        <Divider
+          bgGradient={GlobalColorSettings.BGGRADIENTNAVBAR}
+          h={2}
+          my={4}
+          borderRadius={20}
+        />
       </Flex>
     </>
   )

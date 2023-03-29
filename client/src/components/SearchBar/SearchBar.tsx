@@ -1,6 +1,7 @@
 import { Box, Flex, IconButton, Input, InputGroup } from '@chakra-ui/react'
 import React from 'react'
 import { FaSearch } from 'react-icons/fa'
+import { GlobalColorSettings } from '../../models/colors'
 export interface SearchBarInterface {}
 
 const SearchBar: React.FC<SearchBarInterface> = () => {
@@ -21,7 +22,11 @@ const SearchBar: React.FC<SearchBarInterface> = () => {
               right={0}
               aria-label='Buscar'
               type='submit'
-              colorScheme='orange'
+              color={GlobalColorSettings.COLORICONSEARCHBAR}
+              bg={GlobalColorSettings.BGCOLORICONSEARCHBAR}
+              _hover={{
+                bg: GlobalColorSettings.BGHOVERCOLORICONSEARCHBAR,
+              }}
               icon={<FaSearch />}
             />
           </Flex>
