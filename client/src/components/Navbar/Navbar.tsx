@@ -9,6 +9,7 @@ import {
   Link,
   Spacer,
 } from '@chakra-ui/react'
+import iconNavbar from '@i/logo/nutricion.png'
 import React, { useState } from 'react'
 import { Link as ReactLink, useLocation } from 'react-router-dom'
 import { GlobalColorSettings } from '../../models/colors'
@@ -38,11 +39,7 @@ const Navbar: React.FC<NavbarInterface> = () => {
               alignContent={'center'}
             >
               <Box>
-                <Image
-                  h={12}
-                  w={12}
-                  src='/src/assets/static/logo/nutricion.png'
-                />
+                <Image h={12} w={12} src={iconNavbar} />
               </Box>
               <Box>
                 <Heading>NutriciónUP</Heading>
