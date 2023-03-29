@@ -13,6 +13,7 @@ import { Field, Formik } from 'formik'
 import React from 'react'
 import { BsSend } from 'react-icons/bs'
 import * as Yup from 'yup'
+import { GlobalColorSettings } from '../../../models/colors'
 export interface ContactUsInterface {}
 
 const ContactUs: React.FC<ContactUsInterface> = () => {
@@ -211,9 +212,9 @@ const ContactUs: React.FC<ContactUsInterface> = () => {
                 <Button
                   type='submit'
                   isLoading={formik.isSubmitting}
-                  bg='orange'
+                  bg={GlobalColorSettings.BGBUTTONSENDMESSAGE}
                   _hover={{
-                    bg: 'orange.400',
+                    bg:GlobalColorSettings.BGHOVERBUTTONSENDMESSAGE,
                   }}
                   p={6}
                   borderRadius={18}

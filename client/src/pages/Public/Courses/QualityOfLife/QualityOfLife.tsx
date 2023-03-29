@@ -1,23 +1,35 @@
 import React from 'react';
 export interface QualityOfLifeInterface {}
-import { Flex, Heading, Box, Text, Image, Button} from '@chakra-ui/react'
+import { Flex, Heading, Box, Text, Image, Button, Divider} from '@chakra-ui/react'
 import { SwiperSlide } from 'swiper/react'
 import { Carousel } from '../../../../components/Carousel'
+import { GlobalColorSettings } from '../../../../models/colors'
 
 const QualityOfLife : React.FC<QualityOfLifeInterface> = () => {
 	return (
 	<>
-    	<Flex
+      <Flex
         flexDirection='column'
-        w={['90%', '90%', '80%', '60%']}
+        w={['90%', '90%', '80%', '1150px']}
         alignItems='center'
         m='auto'
         mt={8}
-        bg='blue'
-      	>
-		<Heading fontSize={40}>Nuestro Curso:</Heading>
+      >
+		<Heading fontSize={40} p={4}>Nuestro Curso</Heading>
 		<Heading fontSize={40}>Calidad de Vida</Heading>
-		<Box bg='orange' pl='8' pr='8' pb='5'>
+        <Divider
+          bgGradient={GlobalColorSettings.BGGRADIENTNAVBAR}
+          h={2}
+          my={4}
+          borderRadius={20}
+          w={['90%', '90%', '90%', '50%']}
+        />
+		<Box
+            bg={GlobalColorSettings.CONTAINERABOUTUS}
+            borderRadius={20}
+            px={12}
+            py={4}
+          >
 			<Text pt='5' fontSize={23} textAlign='justify'>
 				Los cursos de calidad de vida pueden abordar diferentes temas que son esenciales para mejorar nuestra salud y bienestar en general. Entre ellos se encuentran: "Aprender a elegir los alimentos", "Conociendo mis límites" y "El esfuerzo en dirección al objetivo".
 			</Text>
@@ -34,74 +46,115 @@ const QualityOfLife : React.FC<QualityOfLifeInterface> = () => {
 				En general, el curso de calidad de vida ofrece herramientas valiosas y prácticas para mejorar todos los aspectos de tu vida. Si estás interesado en maximizar tu bienestar y felicidad, este curso es definitivamente una inversión que vale la pena.
 			</Text>
 		</Box>
-		<Flex
-		        w={['90%', '90%', '90%', '95%']}
-				alignContent='center'
-				justifyContent='center'
-				alignItems='center'
-				m='auto'
-				pb={8}
-				flexDirection='column'
-				bg='blue'>
-			<Heading>Cursos de calidad de vida</Heading>
-			
-			<Carousel>
-			<SwiperSlide>
-				<Flex justifyContent='center' flexDirection='column'>
-				<Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' pt='5'/>
-				<Box bg='green' minHeight='270px'>
-					<Heading textAlign='center' fontSize={32} pt='3' alignContent='center'>Aprende a elegir los alimentos</Heading>
-				</Box>
-				<Button fontSize={24} mx="auto">$430</Button>
-				</Flex>
-			</SwiperSlide>
-			<SwiperSlide>
-				<Flex justifyContent='center' flexDirection='column'>
-				<Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' pt='5'/>
-				<Box bg='green' minHeight='270px'>
-					<Heading textAlign='center' fontSize={32} pt='3'>Conociendo mis límites mentales</Heading>
-				</Box>
-				<Button fontSize={24} mx="auto">$300</Button>
-				</Flex>
-			</SwiperSlide>
-			<SwiperSlide>
-				<Flex justifyContent='center' flexDirection='column'>
-				<Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' pt='5'/>
-				<Box bg='green' minHeight='270px'>
-					<Heading textAlign='center' fontSize={32} pt='3'>El esfuerzo en dirección al objetivo</Heading>
-				</Box>
-				<Button fontSize={24} mx="auto">$240</Button>
-				</Flex>
-			</SwiperSlide>
-			<SwiperSlide>
-				<Flex justifyContent='center' flexDirection='column'>
-				<Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' pt='5'/>
-				<Box bg='green' minHeight='270px'>
-					<Heading textAlign='center' fontSize={32} pt='3'>Aprende a elegir los alimentos</Heading>
-				</Box>
-				<Button fontSize={24} mx="auto">$430</Button>
-				</Flex>
-			</SwiperSlide>
-			<SwiperSlide>
-				<Flex justifyContent='center' flexDirection='column'>
-				<Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' pt='5'/>
-				<Box bg='green' minHeight='270px'>
-					<Heading textAlign='center' fontSize={32} pt='3'>Conociendo mis límites mentales</Heading>
-				</Box>
-				<Button fontSize={24} mx="auto" position="relative">$300</Button>
-				</Flex>
-			</SwiperSlide>
-			<SwiperSlide>
-				<Flex justifyContent='center' flexDirection='column'>
-				<Image src='https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148941359.jpg?w=2000' pt='5'/>
-				<Box bg='green' minHeight='270px'>
-					<Heading textAlign='center' fontSize={32} pt='3'>El esfuerzo en dirección al objetivo</Heading>
-				</Box>
-				<Button fontSize={24} mx="auto" position="relative">$240</Button>
-				</Flex>
-			</SwiperSlide>
-			</Carousel>
-		</Flex>
+		<Divider
+          bgGradient={GlobalColorSettings.BGGRADIENTNAVBAR}
+          h={2}
+          my={4}
+          borderRadius={20}
+          w={['90%', '90%', '90%', '50%']}
+        />
+		<Heading>Cursos de calidad de vida</Heading>
+        <Carousel>
+		<SwiperSlide>
+            <Flex
+              flexDirection='column'
+              justifyContent={'center'}
+              alignContent={'center'}
+              alignItems={'center'}
+            >
+              <Box
+                w={300}
+                borderRadius={20}
+                bg={GlobalColorSettings.BGCONTAINERCAROUSEL}
+                overflow='hidden'
+              >
+                <Image
+                  h='255'
+                  src='/src/assets/static/img/courses/calidad_de_vida/Aprende_a_elegir_los_alimentos.jpg'
+                  objectFit='cover'
+                />
+                <Flex
+                  h={150}
+                  justifyContent='center'
+                  alignItems='center'
+                  alignContent='center'
+				  flexDirection='column'
+                >
+                  <Heading textAlign='center' fontSize={24} mb={4}>
+				  	Aprende a elegir los alimentos
+                  </Heading>
+				  <Text bg={GlobalColorSettings.BGPRICESCOURSES} borderRadius={50} px={6} py={2} fontSize='18' as='b'>$430</Text>
+                </Flex>
+              </Box>
+            </Flex>
+          </SwiperSlide>
+		  <SwiperSlide>
+            <Flex
+              flexDirection='column'
+              justifyContent={'center'}
+              alignContent={'center'}
+              alignItems={'center'}
+            >
+              <Box
+                w={300}
+                borderRadius={20}
+                bg={GlobalColorSettings.BGCONTAINERCAROUSEL}
+                overflow='hidden'
+              >
+                <Image
+                  h='255'
+                  src='/src/assets/static/img/courses/calidad_de_vida/conociendo_mis_limites_mentales.jpg'
+                  objectFit='cover'
+                />
+                <Flex
+                  h={150}
+                  justifyContent='center'
+                  alignItems='center'
+                  alignContent='center'
+				  flexDirection='column'
+                >
+                  <Heading textAlign='center' fontSize={24} mb={4}>
+				  	        Conociendo mis limites mentales
+                  </Heading>
+				  <Text bg={GlobalColorSettings.BGPRICESCOURSES} borderRadius={50} px={6} py={2} fontSize='18' as='b'>$300</Text>
+                </Flex>
+              </Box>
+            </Flex>
+          </SwiperSlide>
+		  <SwiperSlide>
+            <Flex
+              flexDirection='column'
+              justifyContent={'center'}
+              alignContent={'center'}
+              alignItems={'center'}
+            >
+              <Box
+                w={300}
+                borderRadius={20}
+                bg={GlobalColorSettings.BGCONTAINERCAROUSEL}
+                overflow='hidden'
+              >
+                <Image
+                  h='255'
+                  src='/src/assets/static/img/courses/calidad_de_vida/el_esfuerzo_en_direccion_al_objetivo.jpg'
+                  objectFit='cover'
+                />
+                <Flex
+                  h={150}
+                  justifyContent='center'
+                  alignItems='center'
+                  alignContent='center'
+				  flexDirection='column'
+                >
+                  <Heading textAlign='center' fontSize={24} mb={4}>
+				  	          El esfuerzo en dirección al objetivo
+                  </Heading>
+				  <Text bg={GlobalColorSettings.BGPRICESCOURSES} borderRadius={50} px={6} py={2} fontSize='18' as='b'>$240</Text>
+                </Flex>
+              </Box>
+            </Flex>
+          </SwiperSlide>
+		</Carousel>
 		</Flex>
 	</>
 	)

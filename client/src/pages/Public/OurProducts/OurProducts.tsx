@@ -193,7 +193,7 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
             <div className='swiper-button-next' id='ts-next'></div>
           </Box>
         </Carousel>
-        <Heading>Alimentos</Heading>
+        <Heading>Actividad Física</Heading>
         <Divider
           bgGradient={GlobalColorSettings.BGGRADIENTNAVBAR}
           h={2}
@@ -217,7 +217,8 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
               >
                 <Image
                   h='255'
-                  src='/src/assets/static/img/ourProducts/foods/alimentos_secos.jpg'
+                  w='100%'
+                  src='/src/assets/static/img/ourProducts/physical_activity/clases.jpeg'
                   objectFit='cover'
                 />
                 <Flex
@@ -227,7 +228,7 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
                   alignContent='center'
                 >
                   <Heading textAlign='center' fontSize={24}>
-                    Alimentos secos
+                    Clases
                   </Heading>
                 </Flex>
               </Box>
@@ -248,7 +249,7 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
               >
                 <Image
                   h='255'
-                  src='/src/assets/static/img/ourProducts/foods/alimentos_bajo_en_sodio.jpg'
+                  src='/src/assets/static/img/ourProducts/physical_activity/equipamiento.jpeg'
                   objectFit='cover'
                 />
                 <Flex
@@ -258,7 +259,7 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
                   alignContent='center'
                 >
                   <Heading textAlign='center' fontSize={24}>
-                    Alimentos bajos en sodio
+                    Equipamiento
                   </Heading>
                 </Flex>
               </Box>
@@ -279,7 +280,8 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
               >
                 <Image
                   h='255'
-                  src='/src/assets/static/img/ourProducts/foods/alimentos_sin_gluten.jpg'
+                  w='100%'
+                  src='/src/assets/static/img/ourProducts/physical_activity/indumentaria.jpg'
                   objectFit='cover'
                 />
                 <Flex
@@ -289,69 +291,7 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
                   alignContent='center'
                 >
                   <Heading textAlign='center' fontSize={24}>
-                    Alimentos sin gluten
-                  </Heading>
-                </Flex>
-              </Box>
-            </Flex>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Flex
-              flexDirection='column'
-              justifyContent={'center'}
-              alignContent={'center'}
-              alignItems={'center'}
-            >
-              <Box
-                w={300}
-                borderRadius={20}
-                bg={GlobalColorSettings.BGCONTAINERCAROUSEL}
-                overflow='hidden'
-              >
-                <Image
-                  h='255'
-                  src='/src/assets/static/img/ourProducts/foods/alimentos_microondas.jpeg'
-                  objectFit='cover'
-                />
-                <Flex
-                  h={150}
-                  justifyContent='center'
-                  alignItems='center'
-                  alignContent='center'
-                >
-                  <Heading textAlign='center' fontSize={24}>
-                    Alimentos microondas
-                  </Heading>
-                </Flex>
-              </Box>
-            </Flex>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Flex
-              flexDirection='column'
-              justifyContent={'center'}
-              alignContent={'center'}
-              alignItems={'center'}
-            >
-              <Box
-                w={300}
-                borderRadius={20}
-                bg={GlobalColorSettings.BGCONTAINERCAROUSEL}
-                overflow='hidden'
-              >
-                <Image
-                  h='255'
-                  src='/src/assets/static/img/ourProducts/foods/alimentos_frescos.jpg'
-                  objectFit='cover'
-                />
-                <Flex
-                  h={150}
-                  justifyContent='center'
-                  alignItems='center'
-                  alignContent='center'
-                >
-                  <Heading textAlign='center' fontSize={24}>
-                    Alimentos frescos
+                    Indumentaria
                   </Heading>
                 </Flex>
               </Box>
@@ -362,7 +302,7 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
             <div className='swiper-button-next' id='ts-next'></div>
           </Box>
         </Carousel>
-        <Heading>Alimentos</Heading>
+        <Heading>Cuidado del Medioambiente</Heading>
         <Divider
           bgGradient={GlobalColorSettings.BGGRADIENTNAVBAR}
           h={2}
@@ -386,7 +326,8 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
               >
                 <Image
                   h='255'
-                  src='/src/assets/static/img/ourProducts/foods/alimentos_secos.jpg'
+                  w='100%'
+                  src='/src/assets/static/img/ourProducts/environmental_care/libros.jpeg'
                   objectFit='cover'
                 />
                 <Flex
@@ -396,7 +337,7 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
                   alignContent='center'
                 >
                   <Heading textAlign='center' fontSize={24}>
-                    Alimentos secos
+                    Libros
                   </Heading>
                 </Flex>
               </Box>
@@ -417,7 +358,8 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
               >
                 <Image
                   h='255'
-                  src='/src/assets/static/img/ourProducts/foods/alimentos_bajo_en_sodio.jpg'
+                  w='100%'
+                  src='/src/assets/static/img/ourProducts/environmental_care/publicacion.jpg'
                   objectFit='cover'
                 />
                 <Flex
@@ -427,7 +369,7 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
                   alignContent='center'
                 >
                   <Heading textAlign='center' fontSize={24}>
-                    Alimentos bajos en sodio
+                    Publicaciones
                   </Heading>
                 </Flex>
               </Box>
@@ -448,7 +390,7 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
               >
                 <Image
                   h='255'
-                  src='/src/assets/static/img/ourProducts/foods/alimentos_sin_gluten.jpg'
+                  src='/src/assets/static/img/ourProducts/environmental_care/charlas.jpeg'
                   objectFit='cover'
                 />
                 <Flex
@@ -458,69 +400,7 @@ const OurProducts: React.FC<OurProductsInterface> = () => {
                   alignContent='center'
                 >
                   <Heading textAlign='center' fontSize={24}>
-                    Alimentos sin gluten
-                  </Heading>
-                </Flex>
-              </Box>
-            </Flex>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Flex
-              flexDirection='column'
-              justifyContent={'center'}
-              alignContent={'center'}
-              alignItems={'center'}
-            >
-              <Box
-                w={300}
-                borderRadius={20}
-                bg={GlobalColorSettings.BGCONTAINERCAROUSEL}
-                overflow='hidden'
-              >
-                <Image
-                  h='255'
-                  src='/src/assets/static/img/ourProducts/foods/alimentos_microondas.jpeg'
-                  objectFit='cover'
-                />
-                <Flex
-                  h={150}
-                  justifyContent='center'
-                  alignItems='center'
-                  alignContent='center'
-                >
-                  <Heading textAlign='center' fontSize={24}>
-                    Alimentos microondas
-                  </Heading>
-                </Flex>
-              </Box>
-            </Flex>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Flex
-              flexDirection='column'
-              justifyContent={'center'}
-              alignContent={'center'}
-              alignItems={'center'}
-            >
-              <Box
-                w={300}
-                borderRadius={20}
-                bg={GlobalColorSettings.BGCONTAINERCAROUSEL}
-                overflow='hidden'
-              >
-                <Image
-                  h='255'
-                  src='/src/assets/static/img/ourProducts/foods/alimentos_frescos.jpg'
-                  objectFit='cover'
-                />
-                <Flex
-                  h={150}
-                  justifyContent='center'
-                  alignItems='center'
-                  alignContent='center'
-                >
-                  <Heading textAlign='center' fontSize={24}>
-                    Alimentos frescos
+                    Charlas
                   </Heading>
                 </Flex>
               </Box>
